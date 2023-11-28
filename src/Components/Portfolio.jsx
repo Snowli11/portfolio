@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/Dark_Minimalist_Biomedical_Innovation.png";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "A collection of medical device components in varying shapes and textures, all rendered in monochromatic black, arranged against a dark background with gentle lighting.";
 
 /**
  * Project list
@@ -31,40 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Kassensystem 🛒",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
-  },
-  {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
-  },
-  {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
-  },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "'Kassensystem' is a Python-based, GUI cash register system, developed for the 'Introduction to Programming' module at FHNW. It's designed for educational use, offering an easy-to-understand interface for students learning software development basics. The repo includes setup for Windows, Linux, and Docker.",
+    url: "https://github.com/Snowli11/kassensystem",
   },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+      <h2 style={{ textAlign: "center", color: "#FFFFFF" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              borderTopRightRadius: "1rem",
+              borderBottomRightRadius: "1rem",
+            }}
             alt={imageAltText}
           />
         </div>
@@ -72,9 +60,11 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 style={{ flexBasis: "40px", color: "#FFFFFF" }}>{project.title}</h3>
               </a>
-              <p className="small">{project.description}</p>
+              <p className="small" style={{ color: "#FFFFFF" }}>
+                {project.description}
+              </p>
             </div>
           ))}
         </div>

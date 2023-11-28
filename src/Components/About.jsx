@@ -16,28 +16,21 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import image from "../images/Abstract_Geometric_Background_Black_White.png";
 
-const imageAltText = "purple and blue abstract background";
+const imageAltText = "black and white abstract backgrounds, in the style of cubist shapes and planes, dark gray and dark black, 32k uhd, luminous shadowing, angular simplicity, angular --ar 128:63";
 
 /**
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "Welcome to my portfolio. As a Biomedical Engineering student at FHNW Muttenz and a former bio lab technician, I am deeply engaged in exploring the intersection of biology and engineering. Discover my projects and studies here, where I delve into the fascinating world of neural systems and technology.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
-const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
-];
+const skillsList = ["Python", "Lab work", "Data analysis", "CAD", "3D printing", "Engineering"];
 
 /**
  * Use this to give more information about what you are passionate about,
@@ -45,7 +38,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I am deeply passionate about the potential of biomedical engineering to transform lives. My academic pursuits at FHNW Muttenz have not only deepened my understanding of biological systems but also fueled my fascination with the emerging field of brain-machine interfaces. I thrive in environments where creativity meets analytical thinking, and I believe in the power of collaborative innovation to solve complex problems. A quote that inspires me is by Nikola Tesla: \"The present is theirs; the future, for which I really worked, is mine.\" This reflects my forward-thinking approach and my commitment to contributing to the advancements in biomedical technology.";
 
 const About = () => {
   return (
